@@ -1,0 +1,47 @@
+{
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node"   : true
+  },
+  "plugins": [
+    "react"
+  ],
+  "extends": "airbnb",
+  "rules": {
+    "array-bracket-spacing"             : [ "error", "always", { "objectsInArrays": false } ],
+    "arrow-body-style"                  : [ "off" ], // nice to have, but fails for long lines
+    "comma-dangle"                      : [ "error", "never" ],
+    "computed-property-spacing"         : [ "error", "always" ],
+    "curly"                             : [ "off" ],
+    "default-case"                      : [ "off" ],
+    "indent"                            : [ "error", 2, {
+                                            "VariableDeclarator": { "const": 3, "let": 2 },
+                                            "SwitchCase"        : 1
+                                          }],
+    "jsx-a11y/href-no-hash"             : [ "off" ],
+    "key-spacing"                       : [ "error", { "align": "colon" }],
+    "keyword-spacing"                   : [ "error", {"overrides": {
+                                            "if"    : { "after": false },
+                                            "switch": { "after": false }
+                                          }}],
+    "max-len"                           : [ "error", { code: 120 } ],
+    "new-cap"                           : [ "off" ],
+    "no-multi-spaces"                   : [ "off" ],
+    "no-underscore-dangle"              : [ "off" ],
+    "object-curly-spacing"              : [ "error", "always" ],
+    "object-shorthand"                  : [ "error", "methods" ],
+    "one-var"                           : [ "off" ],
+    "quote-props"                       : [ "error", "consistent" ],
+    "react/jsx-boolean-value"           : [ "off" ],
+    "react/jsx-curly-spacing"           : [ "error", "always", {"spacing": {
+                                            "objectLiterals": "never"
+                                          }}],
+    "react/prefer-es6-class"            : [ "off" ],
+    "react/prop-types"                  : [ "warn" ],
+    "space-before-function-paren"       : [ "error", "never" ],
+    "space-in-parens"                   : [ "error", "always", { "exceptions" : ["{}"] }],
+    "space-before-blocks"               : [ "error", {"functions": "never", "keywords": "never"} ],
+    "template-curly-spacing"            : [ "error", "always" ]
+  }
+}

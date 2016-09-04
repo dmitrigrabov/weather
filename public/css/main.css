@@ -1,0 +1,50 @@
+body {
+  color: #FFF;
+  height: 10%;
+  margin-top: 40px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #48416f;
+  background-image: linear-gradient(to bottom, #48416f, #685d9f);
+}
+
+h1 {
+  margin-bottom: 60px;
+}
+
+.main-icon {
+  font-size: 10vw;
+  margin-bottom: 20px;
+}
+
+.small-icon {
+  font-size: 2vw;
+  margin-bottom: 10px;
+}
+
+@media(max-width: 992px) {
+  .small-icon-container {
+    padding-bottom: 60px;
+    font-size: 10vw;
+  }
+
+  .small-icon {
+    font-size: 20vw;
+    margin-bottom: 10px;
+  }
+}
+
+.main-temperature {
+  font-size: 10vw;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.change-day, .change-day:hover, .change-day:visited, .change-day:active {
+  color: #FFF;
+  font-size: 5vw;
+  margin-top: 10vw;
+  text-decoration: none;
+}
